@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vGGies For You</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #227d94;" >     -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- //navbar cha colour dark karaysarthi style background color #e45fg -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">veGGies.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active  " aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Order
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Recent Order</a></li>
+              <li><a class="dropdown-item" href="#">Track Your Order</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Cancle Order</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" style="border-radius: 15px; width: 230px;" placeholder="Search"
+            aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" style="border-radius: 15px;">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- login modal  -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login To veGGies</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- signup modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up With veGGies</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Confirm</label>
+          </div>
+         
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- the end of navbar -->
+  <!-- start of carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img
+          src="  https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+          style="height: 550px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Ware House</h2>
+          <p>Our Ware Houses Are Over In 7 Metro City Now..</p>
+     
+
+        </div>
+      </div>
+      <div class="carousel-item " data-bs-interval="2000">
+        <img
+          src="    https://images.unsplash.com/photo-1632776350300-11016768b521?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=60"
+          style="height: 550px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Dark Stores</h2>
+          <p>We mage almost 103 Dark Stores in Tier I,Tier II cities.</p>
+          <button class="btn btn-primary">Order</button>
+          <button class="btn btn-danger">More</button>
+          <button class="btn btn-success">Track</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="    https://images.unsplash.com/photo-1543168256-418811576931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JvY2VyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60"
+          style="height: 550px;" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Grocery</h2>
+          <p>We Provides Over All Grocery Items In Next Few Weeks</p>
+          <button class="btn btn-primary">Order</button>
+          <button class="btn btn-danger">More</button>
+          <button class="btn btn-success">Track</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- khali Cards Add karnya sathi -->
+  <div class="container my-4 ">
+    <!--cards ani carousel madhe margin denya sathi my-4 add kel y axsisi sathi my (x axis sathi - mx) (left/ right sathi ml/mr)-->
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">
+              <h3>Tomato</h3>
+            </strong>
+            <h3 class="mb-0 text-danger">15% Off</h3>
+            <div class="mb-1 text-muted">135 Rs/kg +gst</div>
+            <p class="card-text mb-auto">
+              <h2>Offer Of The Day.</h2>
+              </p>
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-sm btn-outline-primary ">Order Now</button>
+               <button class="btn btn-sm btn-outline-warning my-2">Add To Cart</button>
+              </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300"
+              src="https://images.unsplash.com/photo-1571680322279-a226e6a4cc2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dG9tYXRvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"><h3>Broccoli</h3></strong>
+            <h3 class="mb-0 text-danger">15% Off</h3>
+            <div class="mb-1 text-muted">135 Rs/kg + gst</div>
+            <h2>Offer Of The Day.</h2>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-sm btn-outline-primary ">Order Now</button>
+             <button class="btn btn-sm btn-outline-warning my-2">Add To Cart</button>
+            </div>
+
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300"
+              src="https://images.unsplash.com/photo-1594885270039-f8871b502f7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJyb2Njb2xpfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- khali Cards Add karnya sathi -->
+  <div class="container my-4 ">
+    <!--cards ani carousel madhe margin denya sathi my-4 add kel y axsisi sathi my (x axis sathi - mx) (left/ right sathi ml/mr)-->
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">
+              <h3>Potato</h3>
+            </strong>
+            <h3 class="mb-0 text-danger">10% Off</h3>
+            <div class="mb-1 text-muted">90 Rs/kg +gat</div>
+            <p class="card-text mb-auto">
+              <h2>Offer Of The Day.</h2>
+              </p>
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-sm btn-outline-primary ">Order Now</button>
+               <button class="btn btn-sm btn-outline-warning my-2">Add To Cart</button>
+              </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="290"
+              src="https://images.unsplash.com/photo-1508313880080-c4bef0730395?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBvdGF0b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative ">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"><h3>Onion</h3></strong>
+            <h3 class="mb-0 text-danger">10% Off</h3>
+            <div class="mb-1 text-muted">280 Rs/kg + gst</div>
+            <h2>Offer Of The Day.</h2>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-sm btn-outline-primary ">Order Now</button>
+             <button class="btn btn-sm btn-outline-warning my-2">Add To Cart</button>
+            </div>
+
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="290"
+              src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b25pb258ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt=" ">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- khali Cards Add karnya sathi -->
+  <div class="container my-4 ">
+    <!--cards ani carousel madhe margin denya sathi my-4 add kel y axsisi sathi my (x axis sathi - mx) (left/ right sathi ml/mr)-->
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">
+              <h3>Sweet Potato</h3>
+            </strong>
+            <h3 class="mb-0 text-danger">9% Off</h3>
+            <div class="mb-1 text-muted">95 Rs/kg + gst</div>
+            <p class="card-text mb-auto">
+              <h2>Offer Of The Day.</h2>
+              </p>
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-sm btn-outline-primary ">Order Now</button>
+               <button class="btn btn-sm btn-outline-warning my-2">Add To Cart</button>
+              </div>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300"
+              src="https://images.unsplash.com/photo-1584699006710-3ad3b82fce7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3dlZXQlMjBwb3RhdG98ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"><h3>Cabbage</h3></strong>
+            <h3 class="mb-0 text-danger">25% Off</h3>
+            <div class="mb-1 text-muted">100 Rs/kg + gst</div>
+            <h2 class="mb-0 text-danger">temporarily Out Of Stock.</h2>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-sm btn-outline-primary ">Notify Me</button>
+             <button class="btn btn-sm btn-outline-warning my-2">Add To Cart</button>
+            </div>
+
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="300"
+              src="https://images.unsplash.com/photo-1603049404411-13c2ca81a316?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNhYmJhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <hr><!-- hr tag madhe ek line add karaysathi -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2021–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<Idoctype html>
+  <html lang="en">I
+
+  </head>

@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">veGGies.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Order
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">My Orders</a></li>
+              <li><a class="dropdown-item" href="#">Track Order</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Cancle Order</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- alert ya alerts che default colour set aahet jasa khali success lihilelea aahe yacha arth alert green colour madhe yail (Primary - Blue , Danger - Red ,secondary - gray -->
+  <!-- <div class="alert alert-success" role="alert">
+    A simple primary alert—check it out! -->
+    <p>Alert</p>
+  </div> 
+  <div class="alert alert-danger" role="alert">
+    Alert! veGGies.com Is Our Only Websit,Please Be aware Of Frauds
+  </div>
+
+
+  <!-- dismissable alert asa alert jo dismiss karu shakto  -->
+  <p>Dismiss Alert</p>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong> Your Order Is Placed For More Detail Track Your Order
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">About</a></li>
+      <li class="breadcrumb-item"><a href="#">Policy</a></li>
+
+      <!-- span nantar jo tag lavlela ahe tyala badge tag mahantat tyachyane new asa tag lagto jasa aapan anek website var baghto -->
+      <!-- tacha colour select karaysahi text-bg-danger  aani shape select karnya sathi rounded-pill -->
+      <p>New Tag</p>
+      <li class="breadcrumb-item active" aria-current="page"><a href="#">Track our Ware House </a><span
+          class="badge rounded-pill text-bg-danger"> New</span></li>
+    </ol>
+  </nav>
+  <p>Buttons</p>
+  <!--Buttons -->
+  <!-- buttonns che color suddha tyanchya colour nusar astat -->
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-danger btn-sm">Small Danger </button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-warning btn-lg">Large Warning</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-light">Light</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <p></p>
+  <!-- Wide  button sathi -->
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button </button>
+  </div>
+  <p></p>
+  <!-- full page button sathi -->
+   <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+  <p></p>
+  <!-- corner la button add karay sathi -->
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-primary me-md-2" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+  </div>
+  <p></p>
+  <!-- jar ekhad costom button add karaych asel tar tya sathi hi css tag add karun button custom karu shakto -->
+  <!-- .btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet);
+  --bs-btn-border-color: var(--bd-violet);
+  --bs-btn-border-radius: .5rem;
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+  --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+  --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+} -->
+<p></p>
+<p>Button group</p>
+<!-- buttons group -->
+<!-- 3 button left-middle-right -->
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div>
+<p></p>
+<!-- buttons group with activelink-link-link -->
+<div class="btn-group">
+  <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+  <a href="#" class="btn btn-primary">Link</a>
+  <a href="#" class="btn btn-primary">Link</a>
+</div>
+<p></p>
+<!-- buttons group with radio horizontal check box -->
+<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+</div>
+<p></p>
+<!-- buttons group with radio vertical check box -->
+
+<div class="btn-group-vertical">
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+  <label class="btn btn-outline-danger" for="btnradio1">Radio 1</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+  <label class="btn btn-outline-danger" for="btnradio2">Radio 2</label>
+
+  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+  <label class="btn btn-outline-danger" for="btnradio3">Radio 3</label>
+</div>
+<p></p>
+<!-- buttons group with number -->
+<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-outline-secondary">1</button>
+    <button type="button" class="btn btn-outline-secondary">2</button>
+    <button type="button" class="btn btn-outline-secondary">3</button>
+    <button type="button" class="btn btn-outline-secondary">4</button>
+  </div>
+  <div class="input-group">
+    <div class="input-group-text" id="btnGroupAddon">@</div>
+    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
+  </div>
+</div>
+ <!-- 1to 8 -->
+ <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="btn-group me-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-secondary">5</button>
+    <button type="button" class="btn btn-secondary">6</button>
+    <button type="button" class="btn btn-secondary">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-info">8</button>
+  </div>
+</div>
+
+<!-- cards -->
+<!-- horizontal cards -->
+<p>Cards</p>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1631880383152-f29099b0fd16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnaXRhYmxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Vegitables</h5>
+    <p class="card-text">We Provides All The Fresh Vegitables At Your Door Step In Less Than 30 min.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1568158879083-c42860933ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZ2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Fruits</h5>
+    <p class="card-text">We Provides All The Fresh Fruits At Your Door Step In Less Than 30 min.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1491524062933-cb0289261700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVnZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Eggs</h5>
+    <p class="card-text">We Provides Egg At Your Door Step In Less Than 30 min.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+</div>
+
+<!-- verticle cards -->
+<div class="card-group">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1631880383152-f29099b0fd16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnaXRhYmxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Vegitables</h5>
+      <p class="card-text">We Provides All The Fresh Vegitables At Your Door Step In Less Than 30 min.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card"  style="width: 18rem">
+    <img src="https://images.unsplash.com/photo-1568158879083-c42860933ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZ2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fruits</h5>
+      <p class="card-text">We Provides All The Fresh Fruits At Your Door Step In Less Than 30 min.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://images.unsplash.com/photo-1491524062933-cb0289261700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGVnZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+    <div class="card-body"  style="width: 18rem">
+      <h5 class="card-title">Eggs</h5>
+      <p class="card-text">We Provides Egg At Your Door Step In Less Than 30 min.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Our Costumer FeedBack</h5>
+    <p class="card-text">We Provide The Servise From Lasrt Five Years</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<!-- Carousel -->
+<!-- mahanje images cha slide show -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1631880383152-f29099b0fd16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnaXRhYmxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"  class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Vegitables</h5>
+        <p>We Provides All The Fresh Vegitables At Your Door Step In Less Than 30 min.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1568158879083-c42860933ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZ2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Fruits</h5>
+        <p>We Provides All The Fresh Fruits At Your Door Step In Less Than 30 min.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1545601445-4d6a0a0565f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGdyb2Nlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Grocery</h5>
+        <p>We Provides All The Grocery Items At Your Door Step In Less Than 30 min.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- mahanje images cha automatic slide show -->
+<!-- yat layout add karta yete -->
+<!-- div.container ne kami ani div.container fluid ne purn area cover karte -->
+<p><h1>Aoutomatic</h1></p>
+<div class="container">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://images.unsplash.com/photo-1631880383152-f29099b0fd16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVnaXRhYmxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://images.unsplash.com/photo-1568158879083-c42860933ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZ2llc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1545601445-4d6a0a0565f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGdyb2Nlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<p><h1>Grid</h1></p>
+<div class="container">
+  <div class="row bg-danger">
+    <!-- <div class="col-4 border"> -->
+      <!-- yaala responsive banvay sathi xs-sm-md-lg-xl-xxl ashe tag add karun responsive banavta yetat -->
+      <!-- yaat jar medium devise asl tar 10+2=12 aani small devise asl tar 6 + 6 = 12 asa badal hoil -->
+    <div class="col-md-10 col-sm-6 border">
+      1 of 2
+    </div>
+    <!-- col-4 yasathi dil ki eka row madhe by default 12 column astat tyatle aapan 4+4=8 vaparle tr aardhi jaga rikami rahate    -->
+    <!-- <div class="col-4 border"> -->
+      <div class="col-md-2 col-sm-6 border">
+      2 of 2
+    </div>
+  </div>
+  <div class="row bg-success">
+    <div class="col-3 border">
+      1 of 3
+    </div>
+    <!-- col-3 yasathi dil ki eka row madhe by default 12 column astat tyatle aapan 3+3+3=9 vaparle tr aardhi jaga rikami rahate    -->
+    <div class="col-3 border">
+      2 of 3
+    </div>
+    <div class="col-3 border">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+<!-- modal -->
+<!-- Scrollable modal -->
+<!-- Scrollable modal -->
+<div class="modal-dialog modal-dialog-scrollable">
+  <h5 class="modal-title">Terms and Conditions</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+  <p>check the detail related to your adress and payment methode after delivery we are not responsible for queries.</p>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> 
+</div>
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<Idoctype html>
+  <html lang="en">I
+
+</head>
